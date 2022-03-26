@@ -23,8 +23,6 @@ export default function SinglePost(props) {
           </div>
         </div>
       </div>
-      
       </>
-   
   )
 }
