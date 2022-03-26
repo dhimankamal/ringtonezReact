@@ -11,7 +11,7 @@ const Search = () => {
             <div className='search-input'>
               <input type='text' placeholder='Search Ringtone here' />
               <button>
-                <img src={seachIcon} alt='' />
+                <img src={seachIcon} alt='seachIcon' />
               </button>
             </div>
           </form>

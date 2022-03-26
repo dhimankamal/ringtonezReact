@@ -3,6 +3,30 @@ import { NavLink} from 'react-router-dom';
 import logo from '../img/logo.png';
 
 
+let NavData = [{
+  name:"Home",
+  href:"/"
+},
+{
+  name:"Category",
+  href:"/category"
+},
+{
+  name:"About Us",
+  href:"/about"
+},
+{
+  name:"Contact Us",
+  href:"/contact"
+}
+
+]
+
+const listItems = NavData.map((list) =>
+<li className='nav-links '>
+<NavLink to={list.href}>{list.name}</NavLink>
+</li>
+);
 
 const Navbar = () => {
   return (
@@ -13,18 +37,7 @@ const Navbar = () => {
             {/* <img src="./components/img/menu.png" alt="menu-icon" height="512" width="512" /> */}
           </div>
           <ul>
-            <li className='nav-links '>
-              <NavLink to='/'>Home</NavLink>
-            </li>
-            <li className="nav-links">
-              <NavLink to='/category'>Category</NavLink>
-            </li>
-            <li className="nav-links">
-              <NavLink to='/about'>About Us</NavLink>
-            </li>
-            <li className='nav-links'>
-              <NavLink to='/contact'>Contact Us</NavLink>
-            </li>
+            {listItems}
           </ul>
         </div>
         <div className='col-md-2 text-center'>

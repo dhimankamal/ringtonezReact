@@ -155,7 +155,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-top: 5rem !important;
   }
   .normal-post .box {
     border: 2px dashed var(--white);
