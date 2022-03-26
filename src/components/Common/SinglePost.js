@@ -15,11 +15,9 @@ export default function SinglePost(props) {
           </p>
           <div className="date-tags">
             <div className="ftags">
-            {props.tags.map((figure) => {
-              return <a>{figure}</a>
+            {props.tags.map((figure,key) => {
+              return <a key={key}>{figure}</a>
             })}
-           
-          
             </div>
             <div className="date">{props.date}</div>
           </div>

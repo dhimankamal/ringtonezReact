@@ -1,32 +1,25 @@
 import React from 'react'
-import { NavLink} from 'react-router-dom';
-import logo from '../img/logo.png';
+import { NavLink } from 'react-router-dom'
+import logo from '../img/logo.png'
 
-
-let NavData = [{
-  name:"Home",
-  href:"/"
-},
-{
-  name:"Category",
-  href:"/category"
-},
-{
-  name:"About Us",
-  href:"/about"
-},
-{
-  name:"Contact Us",
-  href:"/contact"
-}
-
+let NavData = [
+  {
+    name: 'Home',
+    href: '/'
+  },
+  {
+    name: 'Category',
+    href: '/category'
+  },
+  {
+    name: 'About Us',
+    href: '/about'
+  },
+  {
+    name: 'Contact Us',
+    href: '/contact'
+  }
 ]
-
-const listItems = NavData.map((list) =>
-<li className='nav-links '>
-<NavLink to={list.href}>{list.name}</NavLink>
-</li>
-);
 
 const Navbar = () => {
   return (
@@ -37,11 +30,11 @@ const Navbar = () => {
             {/* <img src="./components/img/menu.png" alt="menu-icon" height="512" width="512" /> */}
           </div>
           <ul>
-            {listItems}
+            {NavData.map((list, key) =>  <li key={key} className='nav-links '> <NavLink to={list.href}> {list.name}</NavLink></li>)}
           </ul>
         </div>
         <div className='col-md-2 text-center'>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt='logo' />
         </div>
         <div className='col-md-5 right-nav'>
           <div className='phone-login'>
