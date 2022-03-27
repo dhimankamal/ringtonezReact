@@ -1,9 +1,7 @@
 import React from 'react'
 
 export default function Button (props) {
- let activateLasers = () => {
-     console.log("clicked")
- }
+
 
   return (
     <>
