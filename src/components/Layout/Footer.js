@@ -44,16 +44,16 @@ export default function Footer () {
               <p className='footer-heading'>Links</p>
               <ul>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
               </ul>
             </div>
@@ -61,16 +61,16 @@ export default function Footer () {
               <p className='footer-heading'>Links</p>
               <ul>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
                 <li>
-                  <a href='#'>links</a>
+                  <a href='/'>links</a>
                 </li>
               </ul>
             </div>
