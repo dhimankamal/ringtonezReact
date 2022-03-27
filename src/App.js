@@ -7,6 +7,7 @@ import Contact from './components/pages/Contact'
 import Navbar from './components/Layout/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Category from './components/pages/Category'
+import Footer from './components/Layout/Footer'
 
 function App () {
   return (
@@ -19,6 +20,7 @@ function App () {
            <Route path='/category' element={ <Category />} />
            <Route path='/contact' element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   )
